@@ -1,0 +1,251 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard - Dark Style</title>
+
+    <link href="../css/bootstrap4.2.1.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link href="../css/DataTable" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/stakeholderdashboard.css" rel="stylesheet">
+    <style>
+        #chart {
+            max-width: 650px;
+            margin: 35px auto;
+        }
+
+        .apexcharts-legend {
+            overflow: hidden !important;
+            min-height: 17px;
+        }
+
+        .apexcharts-legend-marker {
+            background: none !important;
+            margin-right: 7px !important;
+        }
+
+        .apexcharts-legend-series {
+            align-items: flex-start !important;
+        }
+    </style>
+    <meta>
+    <meta>
+    <meta>
+    <meta>
+<meta><meta><meta><meta charset="utf-8"></head>
+
+<body lang="en-US" style="overflow-wrap: break-word;" dir="LTR">
+  
+    <div id="wrapper">
+        <div class="content-area">
+            <div class="container-fluid">
+                <div class="main">
+                    <div class="row sparkboxes mt-4">
+                        <div class="col-md-6">
+                            <div class="box box1">
+                                <div class="row">
+                                    <div class="col-md-4 detailsbox">
+                                        <h4>RF SCORE</h4>
+                                        <h3 id="rfscore">0</h3>
+                                    </div>
+                                    <div class="col-md-4 detailsbox">
+                                        <h4>RECENCY SCORE</h4>
+                                        <h3 id="recencyscore">0</h3>
+                                    </div>
+                                    <div class="col-md-4 detailsbox">
+                                        <h4>FREQUENCY SCORE</h4>
+                                        <h3 id="frequencyscore">0</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="box box4">
+                                <div class="row">
+                                    <div class="col-md-4 detailsbox">
+                                        <h3 id="noofkunjungan">0</h3>
+                                        <h5>KUNJUNGAN</h5>
+                                    </div>
+                                    <div class="col-md-4 detailsbox">
+                                        <h3 id="noofeventsatt">0</h3>
+                                        <h5>EVENTS</h5>
+                                    </div>
+                                    <div class="col-md-4 detailsbox">
+                                        <h3 id="noofappointment">0</h3>
+                                        <h5>APPOINTMENT</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row sparkboxes mt-4">
+                        <div class="col-md-12">
+                            <div class="box box3">
+                                <div class="row">
+                                    <div class="col-md-4 detailsbox">
+
+                                    </div>
+                                    <div class="col-md-4 detailsbox">
+                                        <h4>NO OF CASES BY CHANNELS</h4>
+
+                                    </div>
+                                    <div class="col-md-4 detailsbox">
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-1 detailsbox">
+                                        <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
+                                        <h3 id="nophone">0</h3>
+                                    </div>
+                                    <div class="col-md-1 detailsbox">
+                                        <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+                                        <h3 id="noemail">0</h3>
+                                    </div>
+                                    <div class="col-md-1 detailsbox">
+                                        <i class="fa fa-globe fa-3x" aria-hidden="true"></i>
+                                        <h3 id="noportal">0</h3>
+                                    </div>
+                                    <div class="col-md-1 detailsbox">
+                                        <i class="fab fa-twitter fa-3x" aria-hidden="true"></i>
+                                        <h3 id="notwitter">0</h3>
+                                    </div>
+                                    <div class="col-md-1 detailsbox">
+                                        <i class="fab fa-facebook fa-3x" aria-hidden="true"></i>
+                                        <h3 id="nofacebook">0</h3>
+                                    </div>
+                                    <div class="col-md-1 detailsbox">
+                                        <i class="fab fa-instagram fa-3x" aria-hidden="true"></i>
+                                        <h3 id="noinstagram">0</h3>
+                                    </div>
+                                    <div class="col-md-1 detailsbox">
+                                        <i class="fab fa-whatsapp fa-3x" aria-hidden="true"></i>
+                                        <h3 id="nowhatsapp">0</h3>
+                                    </div>
+                                    <div class="col-md-1 detailsbox">
+                                        <i class="fas fa-walking fa-3x" aria-hidden="true"></i>
+                                        <h3 id="nowalkin">0</h3>
+                                    </div>
+                                    <div class="col-md-1 detailsbox">
+                                        <i class="fas fa-comments fa-3x" aria-hidden="true"></i>
+                                        <h3 id="nolapor">0</h3>
+                                    </div>
+                                    <div class="col-md-1 detailsbox">
+                                        <i class="fas fa-fax fa-3x" aria-hidden="true"></i>
+                                        <h3 id="nofax">0</h3>
+                                    </div>
+                                    <div class="col-md-1 detailsbox">
+                                        <i class="fas fa-envelope-open-text fa-3x" aria-hidden="true"></i>
+                                        <h3 id="noletter">0</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row mt-4">
+
+                        <div class="col-md-12">
+                            <div class="box shadow mt-4">
+                                <div id="timeline"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        
+        <canvas id="canvas" style="display: none;"></canvas>
+        <a id="btn-Convert-Html2Image" style="float: right;" href="#"><button>Export as Image</button></a>
+        
+    </div>
+
+    <script src="../javascript/DataTable"></script>
+
+    <script src="../javascript/jquery.slim.min.js"></script>
+    <script src="../javascript/apexchart"></script>
+    <!-- installing few libraries -->
+    <script src="../javascript/axios.min.js"></script>
+    <script src="../javascript/download.min.js"></script>
+    <script src="../javascript/stakeholderdashboardscript.js"></script>
+    <script src="../fontawesome/all.js"></script>
+    
+    <!-- library htmltoCanvas -->
+    <script src="../javascript/html2canvas"></script>
+    <script src="../javascript/jquery.min.js"></script>
+    <script>
+        window.Promise ||
+            document.write(
+                '<script src="../javascript/polyfill.min.js"><\/script>'
+            )
+        window.Promise ||
+            document.write(
+                '<script src="../javascript/classList.min.js"><\/script>'
+            )
+        window.Promise ||
+            document.write(
+                '<script src="../javascript/findindex_polyfill_mdn"><\/script>'
+            )
+
+             
+//         $('#btn-Convert-Html2Image').on('click', function() {
+//         html2canvas($('#wrapper'), {
+//         onrendered: function(canvas) {                                      
+
+//             var saveAs = function(uri, filename) {
+//                 var link = document.createElement('a');
+//                 if (typeof link.download === 'string') {
+//                     document.body.appendChild(link); // Firefox requires the link to be in the body
+//                     link.download = filename;
+//                     link.href = uri;
+//                     link.click();
+//                     document.body.removeChild(link); // remove the link when done
+//                 } else {
+//                     location.replace(uri);
+//                 }
+//             };
+
+//             var img = canvas.toDataURL("image/png"),
+//                 uri = img.replace(/^data:image\/[^;]/, 'data:application/octet-stream');
+
+//             saveAs(uri, 'tableExport.png');
+//         }
+//     }); 
+// });
+
+    var getCanvas;
+    $('#btn-Convert-Html2Image').on('click', function() {
+    html2canvas($('#wrapper'), {
+    onrendered: function(canvas) {
+        // $('#canvas').replaceWith(canvas);
+        getCanvas = canvas;
+
+            //IE/EDGE Suppport (PNG Only)
+            if(window.navigator.msSaveBlob) {
+                window.navigator.msSaveBlob(getCanvas.msToBlob(), "SocialMediaDashboardExport.png");
+            }
+            else
+            {
+                const a = document.createElement("a");
+
+                document.body.appendChild(a);
+                a.href = getCanvas.toDataURL("image/jpg");
+                a.download = "SocialMediaDashboardExport.png";
+                a.click();
+                document.body.removeChild(a);
+
+            }
+        },
+    // width: 700,
+    // height: 1200
+});
+});
+
+    </script>
+</body></html>

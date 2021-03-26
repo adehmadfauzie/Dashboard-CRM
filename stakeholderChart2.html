@@ -1,0 +1,104 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard - Dark Style</title>
+
+    <link href="../css/bootstrap4.2.1.min.css" rel="stylesheet">
+    <link href="../CSS/Montserrat" rel="stylesheet">
+
+    
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/stakeholderdashboard.css" rel="stylesheet">
+    <link href="../css/DataTable" rel="stylesheet">
+    <style>
+        #chart {
+            max-width: 650px;
+            margin: 35px auto;
+        }
+
+        .apexcharts-legend {
+            overflow: hidden !important;
+            min-height: 17px;
+        }
+
+        .apexcharts-legend-marker {
+            margin-right: 7px !important;
+        }
+
+        .apexcharts-legend-series {
+            align-items: flex-start !important;
+        }
+    </style>
+<meta><meta><meta><meta></head>
+
+<body lang="en-US" style="overflow-wrap: break-word;" dir="LTR">
+    <div id="wrapper" style="font-family: undefined;">
+        <div class="content-area">
+            <div class="container-fluid">
+                <div class="main">
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <div class=" shadow mt-4">
+                                <div id="radialBarBottom"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class=" shadow mt-4">
+                                <div id="barchart"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class=" shadow mt-4">
+                                <div id="areachart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <table id="stktable">
+                                <thead>
+                                    <tr>
+                                        <th>Mass Media</th>
+                                        <th>Tgl Publikasi</th>
+                                        <th>Media Monitoring Quotes</th>
+                                        <th>Tonation</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="../javascript/jquery"></script>
+    <script src="../javascript/jquery.slim.min.js"></script>
+    <script src="../javascript/apexchart"></script>
+    <!-- installing few libraries -->
+    <script src="../javascript/axios.min.js"></script>
+    <script src="../javascript/download.min.js"></script>
+    <script src="../javascript/DataTable"></script>
+    <script src="../javascript/stakeholderdashboardscript2.js"></script>
+
+    <script>
+        window.Promise ||
+            document.write(
+                '<script src="../javascript/polyfill.min.js"><\/script>'
+            )
+        window.Promise ||
+            document.write(
+                '<script src="../javascript/classList.min.js"><\/script>'
+            )
+        window.Promise ||
+            document.write(
+                '<script src="../javascript/findindex_polyfill_mdn"><\/script>'
+            )
+    </script>
+
+
+</body></html>
